@@ -11,8 +11,8 @@ Let's explore the different ACM components we will be using in this example: `Ch
 1. Create a `Namespace` where we will store the ACM manifests for the application
 
     ~~~sh
-    oc create -f https://raw.githubusercontent.com/Gigilamalice/Gigilamalice-lab-ocp4-rhacm/master/usecase1/rhacm/application.yaml
     oc create -f https://raw.githubusercontent.com/Gigilamalice/Gigilamalice-lab-ocp4-rhacm/master/usecase1/rhacm/channel.yaml
+    oc create -f https://raw.githubusercontent.com/Gigilamalice/Gigilamalice-lab-ocp4-rhacm/master/usecase1/rhacm/application.yaml
     oc create -f https://raw.githubusercontent.com/Gigilamalice/Gigilamalice-lab-ocp4-rhacm/master/usecase1/rhacm/subscription.yaml
     oc create -f https://raw.githubusercontent.com/Gigilamalice/Gigilamalice-lab-ocp4-rhacm/master/usecase1/rhacm/placementrule.yaml
     ~~~
@@ -42,8 +42,19 @@ Let's explore the different ACM components we will be using in this example: `Ch
 3. Delete oject managed with ACM
 
     ~~~sh
+    # cluster Hub
     oc delete subscription usecase1-subscription1 -n usecase1-app
     oc delete placementrule usecase1-placement -n usecase1-app
+    oc delete applications usecase1-applications -n usecase1-app
+    oc delete channel usecase1-channel -n usecase1-channel
+    oc delete project usecase1-channel
+    oc delete project usecase1-app
+
+    # managed server
+    oc delete project usecase1-ns
+    oc delete project usecase1-app
+
+    
     
     ~~~
 
