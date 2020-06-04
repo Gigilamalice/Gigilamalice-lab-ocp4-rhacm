@@ -6,7 +6,7 @@ metadata:
   labels:
     app: usecase1-app
   annotations:
-    apps.open-cluster-management.io/github-path: usecase1/
+    apps.open-cluster-management.io/github-path: usecase1/application
     apps.open-cluster-management.io/github-branch: master 
 
 spec:
