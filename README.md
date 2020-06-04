@@ -18,7 +18,7 @@ Let's explore the different ACM components we will be using in this example: `Ch
     ~~~
 
 
-x. Check object for the application managed with ACM
+2. Check object for the application managed with ACM
 
     ~~~sh
     oc get project | grep usecase1
@@ -39,12 +39,12 @@ x. Check object for the application managed with ACM
     usecase1-app              usecase1-subscription1-usecase1-application-usecase1-ns-namespace               Namespace       v1                                   83s
     ~~~
 
-x. Delete oject managed with ACM
+3. Delete oject managed with ACM
 
     ~~~sh
     ~~~
 
-x. Edit oject managed with ACM
+4. Edit oject managed with ACM
 
     ~~~sh
     oc edit subscription usecase1-subscription1 -n usecase1-app
