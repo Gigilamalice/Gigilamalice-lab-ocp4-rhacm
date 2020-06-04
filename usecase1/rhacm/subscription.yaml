@@ -8,9 +8,8 @@ metadata:
   annotations:
     apps.open-cluster-management.io/github-path: usecase1/application
     apps.open-cluster-management.io/github-branch: master 
-
 spec:
-  channel: usecase1-channel/usecase1
+  channel: usecase1-channel/usecase1-channel
   overrides:
     - clusterName: /
       clusterOverrides:
