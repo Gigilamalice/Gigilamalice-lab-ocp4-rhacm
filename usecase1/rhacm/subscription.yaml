@@ -17,5 +17,5 @@ spec:
           value: usecase1-ns
   placement:
     placementRef:
-      name: usecase1-placement
+      name: usecase1-placementrule
       kind: PlacementRule

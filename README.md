@@ -42,6 +42,9 @@ Let's explore the different ACM components we will be using in this example: `Ch
 3. Delete oject managed with ACM
 
     ~~~sh
+    oc delete subscription usecase1-subscription1 -n usecase1-app
+    oc delete placementrule usecase1-placement -n usecase1-app
+    
     ~~~
 
 4. Edit oject managed with ACM

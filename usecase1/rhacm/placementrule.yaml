@@ -1,7 +1,7 @@
 apiVersion: apps.open-cluster-management.io/v1
 kind: PlacementRule
 metadata:
-  name: usecase1-placement
+  name: usecase1-placementrule
   namespace: usecase1-app
   labels:
     app: usecase1
