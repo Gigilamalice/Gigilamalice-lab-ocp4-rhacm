@@ -5,6 +5,10 @@ metadata:
   namespace: usecase1-app
   labels:
     app: usecase1-app
+  annotations:
+    apps.open-cluster-management.io/github-path: usecase1/
+    apps.open-cluster-management.io/github-branch: master 
+
 spec:
   channel: usecase1-channel/usecase1
   overrides:

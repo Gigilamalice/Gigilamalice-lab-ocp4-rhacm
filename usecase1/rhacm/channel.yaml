@@ -10,5 +10,5 @@ metadata:
   name: usecase1-channel
   namespace: usecase1-channel
 spec:
-  pathname: 'https://github.com/Gigilamalice/Gigilamalice-lab-ocp4-rhacm/usecase1'
+  pathname: 'https://github.com/Gigilamalice/Gigilamalice-lab-ocp4-rhacm'
   type: github
