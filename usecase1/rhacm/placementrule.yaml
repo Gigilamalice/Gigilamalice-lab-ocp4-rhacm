@@ -6,6 +6,9 @@ metadata:
   labels:
     app: usecase1
 spec:
-  clusterLabels:
+  clusterConditions:
+    - type: OK
+  clusterSelector:
+    matchExpressions: []
     matchLabels:
       env: dev

@@ -14,7 +14,7 @@ spec:
     - clusterName: /
       clusterOverrides:
         - path: metadata.namespace
-          value: usecase1-app
+          value: usecase1-ns
   placement:
     placementRef:
       name: usecase1-placement
